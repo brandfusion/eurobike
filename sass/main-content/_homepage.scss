@@ -249,3 +249,16 @@ body.eurobike {
 		}		
 	}
 }
+#intro-paragraph {
+	background-color: #fff;
+	padding: 15px;
+	.first-paragraph {
+		p {
+			margin-bottom: 0px;
+			font-size: 14px;
+		}
+		h1 {
+			margin-bottom: 0px !important;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+$footer-bg: #222222;
+$footer-color: #666;
+
+.footer {
+	background-color: $footer-bg;
+	color: $footer-color;
+	a {
+		color: $footer-color;
+	}	
+	p {
+		color: $footer-color;
+		font-size: 10px;
+		font-weight:normal;
+		margin:60px 0 20px 0;
+		font-family: 'open_sansregular';		
+	}
+	.small-logo {
+		margin:50px 0 30px 0;
+		float:right;
+	}
+	.social {
+		padding-top: 15px;
+		a {
+			font-size: 16px;
+			color: #666666;
+		}
+		a.fa:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+}

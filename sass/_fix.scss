@@ -1,0 +1,127 @@
+#category-page .logos-list a img{
+	height: 80px;
+    max-width:100%; 
+} 
+.header .navbar a {
+  padding:0 35px;
+}
+.footer-menu ul {
+	padding: 0px;
+	margin: 0px;
+}
+.footer-menu {
+	padding: 0px;
+	margin: 0px;
+	padding-top: 20px;
+}
+.footer-block {
+	width: 20%;
+	float: left;
+}
+.footer-block .footer-block {
+	float: none;
+	width: 100%;
+}
+.footer .footer-menu  li a {
+	/*font-size: 20px;
+	font-weight: 600;
+	color: #ddd;*/
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.footer .footer-menu  li ul li a {
+	/*font-size: 12px;
+	font-weight: 400;*/
+	text-transform: none;
+	font-weight: 400;
+}
+.footer a {
+	color: #888;
+}
+.footer p {
+	color: #888;
+}
+.footer .fa-facebook-square:hover {
+	color: #3c599f;
+}
+.footer .fa-twitter-square:hover {
+	color: #5eaade;
+}
+#sitemap a {
+	color: #000;
+}
+#sitemap {
+	padding: 10px 40px 20px;
+	margin: 0px;
+	width: 500px;
+	margin: 0 auto;
+	
+}
+#sitemap ul {
+	padding-left: 20px;
+	
+	margin: 0px;
+}
+#sitemap li:before {
+    content: "â– ";
+    color: #16538a; /* or whatever color you prefer */
+}
+#sitemap  li li:before {
+    content: "â– ";
+    color: #83bef3; /* or whatever color you prefer */
+}
+#sitemap  li li li:before {
+    content: "â– ";
+    color: #badcfb; /* or whatever color you prefer */
+}
+.fixed-menu {
+	margin-left: 0px;
+}
+.carousel-control.right {
+	filter: none;
+	background-image: none;
+}
+.carousel-control.left {
+	filter: none;
+	background-image: none;
+}
+.fixed-menu .form-group {
+	margin-bottom: 0px;
+}
+.fixed-menu .header-search-nav INPUT[type='submit'] {
+	text-indent: -9999px;
+	float: right;
+}
+.fixed-menu .header-search-nav input[type="text"] {
+	float: left;
+}
+.fixed-menu .navbar-form {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.header-search-nav {
+	filter: alpha(opacity=0);
+}
+.fade-in-opacity {
+	filter: alpha(opacity=100);
+}
+.header .navbar-form .form-group INPUT[type='submit'] {
+	text-indent: -9999px;
+}
+.carousel-inner {
+	clear: both;
+}
+
+.manufacturer .left.carousel-control, .manufacturer .right.carousel-control {
+  margin-top:25px;
+}
+.manufacturer .carousel-inner > .item > a > img {
+  max-height:80px !important;
+}
+.manufacturer a {
+  color:#000000;
+  text-decoration:underline;
+}
+.manufacturer a:hover {
+  text-decoration:none;
+}

@@ -1,0 +1,146 @@
+.btn-1 {
+	display: inline-block;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 15px;
+	height: 27px;
+	line-height: 25px;		
+	color: #3479BA;	
+	background-image: url("../img/eurobike/btn-gray-gradient.png");
+	background-repeat: repeat-x;
+	background-position: left top;
+	text-align: center;	
+	border: 1px solid #d0d0d0;
+	border-radius: 0px;
+	padding: 0px 20px;
+	&:hover {
+		background-image: none;
+		color: #fff;
+		background-color:#3479BA;	
+		text-decoration: underline;
+		border: 1px solid #3479BA;
+	}
+}
+.btn-2 {
+	display: inline-block;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 14px;
+	height: 27px;
+	line-height: 27px;		
+	color: #fff;	
+	background-color: #555555;
+	// background-image: url("../img/eurobike/btn-gray-gradient.png");
+	background-repeat: repeat-x;
+	background-position: left top;
+	text-align: center;	
+	// border: 1px solid #d0d0d0;
+	border-radius: 0px;
+	padding: 0px 20px;
+	&:hover {
+		background-color: #555555;
+		color: #fff;
+		text-decoration: underline;
+	}
+}
+
+
+.btn-3 {
+	padding: 0px 12px;
+	line-height: 26px;
+	background-image: url("../img/eurobike/btn-view-product.png");
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 100%;
+	color: #fff;
+	display: block;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding-left: 10px;
+	color: #fff;
+	font-size: 12px;
+	text-align:center;
+	padding-left: 30px;
+	text-transform:uppercase;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.btn-4 {
+	font-size: 15px;
+	display: inline-block;
+	font-family: 'Archivo Narrow', sans-serif;	
+	height: 27px;
+	line-height: 25px;		
+	color: #3479BA;	
+	background-image: url("../img/eurobike/btn-red-gradient.png");
+	background-color:#da1f3e;
+	background-repeat: repeat-x;
+	background-position: left top;
+	text-align: center;	
+	border: 1px solid #c85246;
+	border-radius: 0px;
+	padding: 0px 20px;
+	color: #fff;	
+	&:hover {
+		color: #fff;
+		background-color: #3479BA;	
+		background-image: none;
+		text-decoration: underline;
+		border: 1px solid #3479BA;
+	}
+}
+.btn-5 {
+	font-size: 15px;
+	display: inline-block;
+	font-family: 'Archivo Narrow', sans-serif;	
+	height: 27px;
+	line-height: 25px;		
+	color: #3479BA;	
+	background-image: url("../img/eurobike/btn-blue-gradient.png");
+	background-color:#3479BA;
+	background-repeat: repeat-x;
+	background-position: left top;
+	text-align: center;	
+	border: 1px solid #1a63a3;
+	border-radius: 0px;
+	padding: 0px 20px;
+	color: #fff;	
+	&:hover {
+		color: #fff;
+		background-image: none;
+		background-color:#3479BA;	
+		text-decoration: underline;
+		border: 1px solid #3479BA;
+	}
+}
+
+.btn-nextstep {
+	font-family: 'Archivo Narrow', sans-serif;		
+	background-image: url("../img/eurobike/btn-green-glaze.png");
+	background-repeat: repeat-x;
+	background-position: 0px 0px;		
+	color: #fff;	
+	display: block;	
+	text-align: center;
+	padding: 0px 12px;	
+	height: 27px;
+	border:none;
+	line-height: 27px;
+	background-position: left center;
+}
+
+.btn-calltoaction {
+	font-family: 'Archivo Narrow', sans-serif;		
+	font-size: 15px;
+	background-image: url("../img/eurobike/btn-green-glaze.png");	
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+	border-radius: 5px;;		
+	color: #fff;
+	box-shadow: 1px 1px #090;;
+	display: block;	
+	height: 37px;
+	border:none;
+	line-height: 39px;
+	text-align: center;
+	padding: 0px 12px;
+}

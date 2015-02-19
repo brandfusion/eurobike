@@ -1,0 +1,37 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	color: $linkcolor;
+	font-family: "open_sansregular", Verdana, sans-serif;
+	background-color: #fff;
+	color: #000;
+}
+img { display: block; }
+b, strong {
+	font-family: 'Roboto Condenesed', sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+p {
+	padding:0;
+	margin:0;
+}
+a { 
+	text-decoration: none; 
+	color: $linkcolor; 
+}
+a:hover, a:focus {color: $linkcolor-hover;}  
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.spacing {
+	margin-bottom:20px;
+}
+.clear {
+	float: none;
+}
+.nav-pills>li+li {
+	margin: 0px;
+}

@@ -1,0 +1,288 @@
+$linkcolor: #fff;
+$linkcolor-hover: #fff;
+$header-color: #fff;
+$header-search-bg: #2F2830;
+$header-search-border: #999999;
+$header-bg: url(../img/eurobike/header-bg.png);
+
+// $linkcolor: #454545;
+// $linkcolor-hover: #71c308;
+// $header-color: #71c308;
+// $header-search-bg: #fff;
+// $header-search-border: transparent;
+// $header-bg: #fff;
+
+.header {
+	background: $header-bg repeat top left;	
+	height: 110px;
+	width: 100%;
+	color: $header-color;
+	border-bottom: 1px solid $header-search-border;
+
+	.nav > li > a:hover, .nav > li > a:focus {
+		background: transparent;
+	}
+	a {
+		color: $linkcolor;
+		&:hover {
+			color: $linkcolor-hover; 
+		}
+	}
+	// Logo
+	#logo {
+		img{
+			max-width:100%;
+			margin-top:10px;			
+		}
+		p {
+			color: #BBBBBB;
+			font-weight:normal;
+			font-family:'open_sansbold';			
+			font-size:11px;
+		}		
+	}
+	.fixed-logo {
+		position:fixed;
+		z-index:999999;
+		top:0;
+		img {
+			display:block;
+			width:auto;
+			max-width:100%;
+			height:28px;
+			margin-top:0 !important; 
+		}
+		p {
+			display:none;
+		}
+	}
+
+
+	// Header Nav
+	.navbar {		
+		border: none;
+		min-height: 0px;
+		border-radius: 0px;
+		text-align:right;		
+		ul{
+			margin: 20px 0 0px 0px;
+			&.navbar-right {
+				&:last-child {
+					margin-right:-42px;
+				}
+			}
+		}
+		li {
+			display:inline-block;
+		}
+		a {
+			border-left: 1px solid #fff;			
+			text-transform: uppercase;
+			font-size: 10px;
+			font-family:'open_sansbold';
+			font-weight:normal;
+			line-height: 10px;
+			text-shadow: none;
+			padding: 0px 43px;	
+			margin-top:5px;	
+		}
+		a:hover,a:focus {
+			text-decoration: underline;			
+		}
+		li:first-child a {
+			border: none;
+		}
+	}
+	small {
+		line-height:25px;
+		font-size: 10px;
+		font-family: 'open_sansbold';
+		font-weight: normal;
+	}
+
+// Header Cos
+	.cos {		
+		background-image: url("../img/eurobike/cart.png");
+		background-position: 0px 2px;
+		background-repeat: no-repeat;
+		display: block;
+		margin-top: 4px;
+		padding-left: 35px;		
+	}
+
+// Produse Index
+	.produse {
+		margin-left: 10px;
+		margin-top: 4px;
+		margin-left:15px;
+	}
+
+// Search Form
+	.navbar-form {
+		padding: 0px;
+		position:relative;		
+		margin: 0 30px 0 0;
+		.form-group {
+			background-color: $header-search-bg;
+			color: $header-color;
+			border: 1px solid #999999;
+			border-radius: 20px;
+			outline: none;
+			padding: 0px 5px 0 15px;
+			width: 255px;
+			height: 32px;
+			font-size: 12px;
+			position:relative;
+			z-index:999;
+
+			input[type="text"] {
+				width: 210px;	
+				border:none;	
+				background:none;
+				padding: 7px 0px;
+				margin: 0px;
+				line-height: 15px;
+				color:#a9a9a9;
+				vertical-align:middle;
+				&:focus {
+					border:none;
+					box-shadow:0 0 0 #fff; 
+					outline: none;
+				}
+			}
+			input[type="submit"] {
+				background:url(../img/eurobike/search.png) no-repeat center center;
+				border:none;
+				width:16px;
+				height:16px;								
+				vertical-align:middle;
+			}
+		}
+		.instant_search {
+			position:absolute;
+			top:20px;
+			left:0;
+			padding-top:15px;
+			z-index:99;
+			background:#2f2830;
+			color:#000000;
+			ul {
+				margin:0;
+				padding:0;
+				box-shadow:10px 10px 20px -12px #000;
+				img {					
+					display:inline-block;
+					vertical-align:middle;
+					margin:0 10px;
+					width:60px;
+					height:auto;
+				}
+			    span {
+					display: inline-block;
+					vertical-align:middle;
+					line-height: 1.5;
+					color: #ffffff;
+					max-width: 175px;
+					font-size: 12px;
+					font-weight: normal;
+					padding-right: 10px;
+				}
+				li {
+					list-style-type: none;
+					margin:5px 0;
+					padding:5px 0;
+					&:hover {
+						background:#17578f;
+					}
+					
+				}
+			}
+			&:focus {
+				display:block;
+			}
+		}
+
+	} 
+	a {
+		&.header-cos {
+			text-decoration:underline;
+			&:hover {
+				text-decoration:none;
+			}
+		}
+	}
+}
+
+.container-wide {
+	.navbar {		
+		ul{
+			&.navbar-right {
+				&:last-child {
+					margin-right:0px;
+				}
+			}
+		}
+	}
+}
+
+
+.header-search-nav  {	
+	background: #185992;
+	border-top:1px solid #999999;   
+	margin-top: -30px;
+	position: absolute;
+	right: 0;
+	top: 60px;
+	z-index: 9999999999;
+	width: 206px;	
+	opacity: 0;
+
+
+	input[type="text"] {
+		background: #ffffff;
+		border: none;
+		vertical-align: middle;
+		color: #333;
+		font-size:11px;
+		padding: 1px 7px;
+		margin: 0 2px 2px 0;
+		width: 155px;
+	}
+     input[type="submit"] { 
+     	background: url(../img/white-arrow.png) no-repeat center center;
+		border: none;
+		width: 16px;
+		height: 16px;
+		margin: -2px -7px 0 0;
+		vertical-align: middle;
+     }
+}
+.header-search-nav-button {
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background-color: #185992;
+	right: 0px;
+	top: 0px;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 2px;
+	cursor: pointer;
+	&:hover {
+		background-color:#f7b412;
+		-webkit-transition: opacity 0.5s ease-in-out;
+		-moz-transition: opacity 0.5s ease-in-out;
+		-o-transition: opacity 0.5s ease-in-out;
+		transition: opacity 0.5s ease-in-out;
+	}
+}
+.animate {
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+.fade-in-opacity {
+	opacity: 1 ;
+}

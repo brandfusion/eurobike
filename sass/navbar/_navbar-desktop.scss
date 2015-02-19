@@ -1,0 +1,136 @@
+.main-nav {
+	background:#222222;
+	ul{
+		margin:0;
+		padding:0;
+		li {
+			list-style-type:none;
+			width: 157px;
+			display:inline-block;
+			text-align: center;
+			border-right: 1px solid #999999;
+			a {
+				color:$linkcolor;
+				font-size:12px;				
+				display:block;
+				padding:6px 25px 7px !important;
+				text-transform:uppercase;
+				&:hover, &:focus {
+					text-decoration:none;		
+					background:none !important;			
+				}					
+				span.caret {
+					background: url("../img/eurobike/menu-arrow.png") no-repeat top left;		
+					width:10px;
+					height:5px;
+					border:none;
+					margin-left:8px;		
+				}			
+			}
+			&:hover {
+				background:none !important;
+
+				ul {
+					&.dropdown-menu.M2 {
+						display:block;
+						left:-3px;
+						border:none;
+						border-left: 1px solid #999999;
+						li {
+							width:100%;
+							display:block;
+							clear:both;
+							border:none;
+							text-align:left;
+							border-top: 1px solid #666;
+							&:first-child {
+								border-top: none;
+							}
+							a {
+								padding:5px 10px 5px !important;
+								line-height:18px;
+								text-transform:none;
+								background:url(../img/eurobike/menu-bg.png) repeat-x top left;	
+								&:hover {
+									color:#fff;
+									background:url(../img/eurobike/menu-hover-bg.png) repeat-x top left !important;	
+								}							
+							}							
+							&:hover {
+								a {
+									background:url(../img/eurobike/menu-hover-bg.png) no-repeat top right !important;
+								}								
+							}
+							&.dropdown {
+								a {
+									&.inpath {
+										background:url(../img/eurobike/menu-hover-ul-bg.png) no-repeat top right !important;
+									}	
+									&:hover {
+										text-decoration:none;
+										background:url(../img/eurobike/menu-hover-ul-bg.png) no-repeat top right !important;
+										color:#fff;
+									}
+								}
+								&:hover {
+									a {
+										background:url(../img/eurobike/menu-hover-ul-bg.png) no-repeat top right !important;
+									}								
+								}
+							}
+							
+							
+						}
+					}
+					li {
+						border:none;
+						
+						&:first-child {
+							border-top: none;
+						}
+						&.dropdown {
+							&:hover {
+								ul {
+									border:none;									
+									&.dropdown-menu.M3 {
+										display:block !important;
+										left:100%;
+										top:-1px;
+										li {	
+											border-top: 1px solid #666;										
+											a {
+												text-transform:none; 
+												padding:5px 10px 5px !important !important;
+												line-height:18px;	
+												background:url(../img/eurobike/menu-hover-bg.png) no-repeat top left !important;										
+												&:hover {
+													text-decoration:none;
+													border:none !important;
+													background:url(../img/eurobike/menu-bg.png) repeat-x top left !important;	
+													color:#fff;
+												}
+												&.inpath.activeitem {
+													background:url(../img/eurobike/menu-bg.png) repeat-x top left !important;	
+												}
+											}											
+										}
+									}									
+								}
+							}
+						}
+					}
+				}
+			}				
+			&:last-child {
+				border-right:none;	
+			}
+			
+
+			&.open > a {
+				background:none !important;
+			}			
+			
+		}
+	}
+
+}

@@ -1,0 +1,304 @@
+#category-page {
+
+	a {
+		// color: #000;
+	}
+	
+	.wrap {
+		background-color: #fff;	
+		padding: 20px 0;	
+		margin-bottom: 0;
+	}
+	.container {
+		position:relative;
+	}
+	// Content Header
+	.category-header {
+		width: 91%;	
+		p {
+			padding-left: 15px;			
+			font-size: 12px;
+			color: #AAAAAA;			
+			margin: 5px 0px 0px 0px;
+		}	
+	}
+	h1 {
+		margin: 0px;
+		padding: 0px;
+		margin: 13px 0px 0px 0px;			
+		font-family: 'Archivo Narrow', sans-serif;
+		font-weight: bold;
+		font-size: 18px;			
+		padding-left: 15px;
+		color:#000;
+		border-bottom: 1px solid #CCCCCC;
+	}
+	.category-badge {
+		width: 9%;
+		height: auto;
+		margin-bottom:20px;
+		img {
+			max-width: 100%;
+			height: auto;
+		}		
+	}
+	.category-wrap {
+		// padding: 10px 20px 20px;
+		clear: both;
+	}
+	.filter-horizontal {
+		select {
+			font-size: 12px;
+			font-weight: normal;
+			color: #666666;
+			width:140px;
+			height:22px;
+			margin-right: 20px;	
+		}
+		.sort {
+			line-height: 26px;
+			text-align: right;
+			font-size: 12px;
+			font-weight: normal;
+			color: #666666;
+			margin-top: 0;
+			padding-top: 0;
+		}
+			
+	}
+	.pagination-info {
+
+		p {
+			line-height: 26px;
+			text-align: right;
+			font-size: 12px;
+			font-weight: normal;
+			color: #666666;
+			margin-top:0;
+			padding-top:0;
+
+		}
+		.pagination-custom {			
+			margin:3px 0px 0px 20px;
+			/* width:137px;	 */
+					
+			li {
+				a {	
+					color: #666;
+					background-color: #fff;
+					font-size: 10px;
+					padding: 4px 7px 2px 7px;
+					border: 1px solid #CCCCCC;
+					&:hover {
+						background:#ddd;
+						border: 1px solid #CCCCCC;	
+					}
+					img {
+						padding: 2px 0px;
+					}
+
+				}
+			}
+			li:first-child a {
+				border-radius: 0px;
+			}
+			li:last-child a {
+				border-radius: 0px;
+			}
+
+		}
+		// Boostrap Override
+		.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+			z-index: 2;
+			background:#ddd;
+			cursor: default;	
+			border: 1px solid #CCCCCC;	
+			
+		}
+	}
+	
+	.product-list {
+		
+	}
+	.filter-products {
+		background: #555 !important;
+		padding: 0 10px;
+		height: 25px;
+		width: 100%;		
+		border: 0;
+		color:#ffffff;
+		text-transform: uppercase;
+		display: inline-block;
+		line-height: 25px;
+		font-size: 10px;
+		margin: 0;
+		display: inline-block;
+	}
+	.filter-vertical {
+		background-color: #EEEEEE;
+		border-bottom: 1px solid #666666;
+		padding: 5px 10px 20px 10px;
+		a {
+			&.anuleaza {					
+				background:#555 !important;
+				padding:0 10px;
+				height: 25px;
+				width: auto;
+				border: 0;
+				text-transform: uppercase;
+				display: inline-block;
+				line-height: 25px;
+				font-size: 10px;
+				margin:0;
+				display:inline-block;
+			}
+			&.anuleaza-wide {
+				width:190px;
+				text-align:center;
+			}
+		}
+		input {
+			margin:-1px 5px 0 0;
+			vertical-align:middle;
+			&[type="submit"] {
+				color: #fff;
+				background-image: url("../img/eurobike/btn-blue.png");
+				background-color: #1b609e;
+				background-repeat: no-repeat;
+				background-position: left top;
+				height: 25px;
+				width: auto;
+				border: 0;
+				text-transform: uppercase;
+				padding-left: 20px;
+				display: inline-block;
+				line-height: 25px;
+				font-size: 10px;
+				margin:0;
+				&.anuleaza {					
+					background:#555 !important;
+					padding:0 10px;
+				}
+			}
+		}
+		p {
+			color: #666666;
+			font-family: 'Archivo Narrow', sans-serif;
+			font-size: 16px;
+			font-weight: 700;
+			margin: 0px 0px 20px 20px;
+		}
+		label {			
+			font-size: 12px;
+			font-weight: normal;
+			line-height:20px;
+			color: #3579BB;
+			vertical-align: middle;
+			font-family: 'open_sansregular';	
+			.badge {
+				font-size: 12px;
+				font-weight: normal;
+				color: #3579BB;				
+				background: none;				
+			}
+		}
+		ul {
+			margin:5px 0 10px 0;
+			padding:0 0 0 15px;
+		}
+	}
+	h3 {
+		margin: 10px 0 5px 0;
+		font-family: 'Roboto Condenesed', sans-serif;
+		font-size: 16px;		
+		padding-left:0;
+		/* background-image: url("../img/eurobike/filter-ico.png");
+		background-repeat: no-repeat;
+		background-position: left center; */
+	}
+
+	.grouplist {
+		background:#eee;
+		padding:10px 10px;
+		margin:0 0 0 0;
+		li {
+			a {
+				margin: 10px 0 5px 0;
+				font-family: 'Roboto Condenesed', sans-serif;
+				font-size: 14px;
+				font-weight:bold;
+				line-height:24px;
+				color:#000;
+				padding-left: 0;
+				/* background-image: url("../img/eurobike/filter-ico.png");
+				background-repeat: no-repeat;
+				background-position: left center; */
+				&.activeitem {
+					color:#3479ba;
+					/* text-decoration:underline; */
+				}
+				&:hover {
+					color:#3479ba;
+				}				
+			}
+			ul {
+				margin:0 0 15px 0px;
+				padding:0 0 0 1px;
+				li {
+					a {
+						font-size:12px;
+						font-weight:normal;
+						line-height:18px;
+						background:none;
+					}
+				}
+			}
+		}
+	}
+	&.group {
+		.product-box {
+			height:293px;
+			h2 {
+				min-height:15px;
+			}
+			.product-content{
+				min-height:70px;
+				padding:5px 0 0 2px;
+			}
+			.product-hover-content {
+				height:200px;
+			}
+		}		
+	} 
+}
+
+.fixed-filters {
+	position:fixed;
+	top:45px;
+	.filter-vertical {
+		/*  height:600px; */
+		width:225px;
+		overflow-y:scroll;
+	}
+}
+.category-wrap {
+	.pull-right {
+		.display-products  {
+			margin:-70px 0 0 0 !important;
+		}
+	}
+	.display-products  {
+		margin: -50px 0 30px 0;
+		text-align:right;
+		a {
+			margin:0 0 0 5px;
+			color:#999999; 
+			&.active {
+				color:#17568f;
+			}
+		}
+
+	}
+	
+}
+

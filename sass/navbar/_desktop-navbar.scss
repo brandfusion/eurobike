@@ -1,0 +1,176 @@
+$navItemBgImg: url(../img/eurobike/menu-bg.png);
+$navItemBgImgHover: url(../img/eurobike/menu-hover-bg.png);
+$navItemBgImgLastItem: url(../img/eurobike/menu-hover-ul-bg.png);
+$navItemColor: #fff;
+$navItemColorHover: #fff;
+$mainNav-bg: url("../img/eurobike/nav-bg.jpg");
+$nav-level-one-bg-hover: transparent;
+
+
+// $navItemBgImg: #fff;
+// $navItemBgImgHover: #71c308;
+// $navItemBgImgLastItem: #71c308;
+// $navItemColor: #000;
+// $navItemColorHover: #fff;
+// $mainNav-bg: #fff;
+// $nav-level-one-bg-hover: #71c308;
+
+
+.dropdown-menu {
+	font-size: inherit;
+}
+.main-nav {
+	// font-family: Verdana, sans-serif;
+	font-size: 12px;
+	background: $mainNav-bg repeat-x top left;
+	border-top: 1px solid #999999;	
+	ul {	
+		margin: 0 0 0 2px;
+		padding: 0px;
+		border-radius: 0px;	
+		li {			
+			width: 165px;
+			display:inline-block;
+			text-align: center;
+			position:relative;
+			border-right: 1px solid #999999;
+			&:last-child {border-right:none;}		
+			a {
+				color:$navItemColor;							
+				display:block;				
+				padding: 0px;
+				text-transform:uppercase;
+				line-height: 30px;
+				&:hover, &:focus {
+					text-decoration:none;	
+					background-color: $nav-level-one-bg-hover;
+					color: $navItemColorHover;
+					border-radius: 0px;
+					.fa {
+						color: #4e8bcf; 
+					}
+				}
+				&:after {
+					background: url("../img/eurobike/menu-arrow.png") no-repeat center right;					
+				}						
+				.fa {
+					display:inline-block;
+					margin-left:8px;
+				}	
+				&.inpath {
+					.fa {
+						color: #4e8bcf; 
+					}
+				}				
+			}
+		}  
+
+		// Menu Open - Hover
+		li:hover {	
+			.fa {
+				color: #4e8bcf; 
+			}			
+			ul {
+				li {						
+					width:100%;						
+					clear:both;
+					border:none;
+					text-align:left;
+					border-top: 1px solid #666;				
+					&:first-child {border-top: none;}
+				}
+				a {
+					padding:5px 10px 5px;
+					line-height:18px;
+					text-transform:none;
+					background:$navItemBgImg repeat-x top left;	
+					&:hover {
+						background:$navItemBgImgHover no-repeat top left;
+						color: $navItemColorHover;
+					}
+					&.activeitem {
+						background:$navItemBgImgHover no-repeat top left;
+						color: $navItemColorHover;
+					}
+					&.more {
+						background:$navItemBgImgLastItem no-repeat top right;	
+					}			
+				}
+				&.dropdown-menu.M2 {
+					display:block;
+					left:-3px;
+					border:none;
+					border-left: 1px solid #999999;						
+				}					
+			}
+		}
+
+		// Mega Menu (rework)
+		li.megaMenu {
+			position:inherit;				
+		}
+
+		// Mega Menu Open - Hover
+		li.megaMenu:hover {	
+			a {
+				.fa {
+					color: #4e8bcf; 
+				}	
+			}				    	    						    
+	    ul.dropdown-menu.M2 {
+	    	width:100%;
+	    	margin-left:3px;
+	    	display:block;
+	    	border:none;
+	    	padding-bottom:10px;
+	    	padding-top:10px;
+	    	background:#2c272d;
+	    	li {				    		
+	    		width:188px;				    		
+	    		border-top:none;
+	    		text-align:left;
+	    		
+	    		ul {
+	    			display:block;
+	    			position:relative;
+	    			left:-1px;
+	    			top:auto;
+	    			margin-left:0;
+	    			li {
+	    				border-top:none;
+	    				border-bottom: 1px solid #666;
+	    				border-right:none;	
+	    				text-align:left; 				    				
+	    			}
+	    		}
+	    	}
+	    	li.dropdown a {
+    			background:$navItemBgImgHover no-repeat top left;
+    			color:$navItemColor;
+	    	}
+	    	li.dropdown ul.dropdown-menu li a {
+				background:$navItemBgImg repeat-x top left;
+				color:$navItemColor;
+				&:hover {
+					color: $navItemColorHover;
+					background:$navItemBgImgHover no-repeat top left;
+				}
+				&.activeitem {
+					color: $navItemColorHover;
+					background:$navItemBgImgHover no-repeat top left;
+				}
+	        }
+		  }			    		
+		}
+	}
+}
+
+.fixed-menu {
+	position:fixed;
+	top:0;
+	margin-left:-15px;
+	width:960px;
+	padding-left:125px;
+	z-index:9999;
+	background: $mainNav-bg repeat-x top left;
+}

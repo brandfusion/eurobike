@@ -1,0 +1,49 @@
+#general-page {	
+	padding:0;
+	.wrap {
+		background-color: #fff;
+		padding: 20px 0;
+		margin-bottom: 0;
+	}
+
+	h1 {
+		font-size: 30px;
+		font-weight: 700;
+		color: #BABABA;
+		padding: 10px 0px 10px 0;
+		margin: 10px 0px 0px 0px;
+	}
+	h4 {
+		font-size: 14px;
+		font-weight: 700;
+		color: #000000;
+		padding: 10px 0 0 0;
+		margin: 10px 0 0 0;
+	}
+	p {
+		font-size: 12px;
+		color: #000;
+		padding:0;
+		margin:10px 0 0 0;
+		line-height: 1.5;
+	}
+
+}
+.modal-body {
+	.first-paragraph {
+		h4 {
+			font-size: 14px;
+			font-weight: 700;
+			color: #000000;
+			padding: 10px 0 0 0;
+			margin: 10px 0 0 0;
+		}
+		p {
+			font-size: 12px;
+			color: #000;
+			padding:0;
+			margin:5px 0 0 0;
+			line-height: 1.5;
+		}
+	}
+}

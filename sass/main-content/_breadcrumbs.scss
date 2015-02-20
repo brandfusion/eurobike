@@ -15,17 +15,18 @@
 			list-style-type:none;
 			color: $breadcrumb-hover ;
 			a {
-				color: $breadcrumb !important;
+				color: #000 !important;
 				text-decoration: none;
-				text-transform:lowercase;
+				text-transform:capitalize;
 				margin:0 5px;
 				display:inline-block;
+				font-family: "Open Sans", Verdana, sans-serif;
 				&:hover {
 					text-decoration: none;
-					color: $breadcrumb-hover !important;
+					color: #0063BE;
 				}	
 				&:active {
-					color:$breadcrumb-hover !important;
+					color: #0063BE;
 				}	
 			}
 		}

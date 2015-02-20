@@ -118,7 +118,8 @@
 			width:100%;
 			text-align:left;
 			a {	
-				font-family: 'open_sansbold', Verdana, sans-serif;
+				font-family: "Open Sans", Verdana, sans-serif;
+				font-weight: 700;
 				width: auto;
 				height: 28px;
 				display: block;
@@ -200,9 +201,10 @@
 	}
 	label {
 		
-		font-family: "open_sansbold", Verdana, sans-serif;
+		font-family: "Open Sans", Verdana, sans-serif;
+		font-weight: 700;
 		color: #7F7F7E;
-		font-weight:normal;
+		
 		padding-left: 0px;
 	}
 	input {
